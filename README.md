@@ -18,3 +18,13 @@ enum class Color
 };
 Color c = Color::Red;
 '''
+
+
+## noexcept
+- 함수의 예외사항을 고려하지 않음을 명시하는 것
+- 만약 예외상황 발생시 std::terminate()으로 프로그램 exit(1)!
+
+
+## RAII (Resource Acquisition Is Initialization)
+- 자원의 생성과 해제를 객체의 생명주기에 맡긴다
+- 즉, 자원의 할당은 생성자가, 해제는 소멸자에게 맡기는 것..
