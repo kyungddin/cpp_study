@@ -4,6 +4,9 @@
 - C++ MFC의 문자열 Class
 - Windows와 MFC는 보통 TCHAR / wchar_t 기반 문자열을 사용
   - wchar_t: C++의 문자 타입으로 wide character (2 byte) 라는 뜻
+    - 영어는 8bit 만으로 모든 문자를 Cover 가능하지만, 당장 우리의 한글만 하더라도 8bit로는 한계가 있다
+      - 현대 한글 음절이 11,172개이다..
+    - 따라서 2byte char를 써서 세계의 모든 문자를 cover한다!
   - TCHAR은 매크로로 ANSI에선 char, Unicode에선 wchar_t
     - 요즘 Windows에서는 TCHAR = wchar_t
 - CString은 자동으로 LPCTSTR로 변환?
