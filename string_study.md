@@ -13,9 +13,9 @@
 ## _T() 매크로
 - 문자열 타입 자동 변환 매크로이다
 - ex
-'''{cpp}
+```cpp
 CString str = _T("Hello");
-'''
+```
       
 # std::String
 
