@@ -16,6 +16,37 @@
 ```cpp
 CString str = _T("Hello");
 ```
+
+## 주요 함수
+- Format
+```cpp
+CString str;
+str.Foramt(_T("value = %d"), 10);
+```
+- Append
+```cpp
+str += _T(" world");
+```
+- Compare
+```cpp
+str.Compare(_T("Hello"));
+```
+- 길이
+```cpp
+str.GetLength();
+```
+- substring
+```cpp
+str.Left(3);
+str.Right(2);
+str.Mid(1,3);
+```
+- CString -> String
+```cpp
+std::string s = "hello";
+CString cs(s.c_str());
+// In Unicode env
+```
       
 # std::String
 
