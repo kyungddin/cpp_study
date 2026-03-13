@@ -10,7 +10,12 @@
     - LPCTSTR = const TCHAR*
     - 따라서 CString과 Windows/MFC는 궁합이 좋다
 
-
+## _T() 매크로
+- 문자열 타입 자동 변환 매크로이다
+- ex
+'''
+CString str = _T("Hello");
+'''
       
 # std::String
 
